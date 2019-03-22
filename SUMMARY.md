@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [GitBook教程](docs/GitBookGuide/README.md)
+    * [GitBook使用教程](docs/GitBookGuide/GitBook使用教程.md)
 * [Apple设备使用](docs/AppleDeviceUsage/README.md)
     * [Mac使用](docs/AppleDeviceUsage/Mac使用.md)
     * [iPhone使用](docs/AppleDeviceUsage/iPhone使用.md)

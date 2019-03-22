@@ -80,7 +80,7 @@ done
 
 ### 3.1、快速设置的技巧
 
-![](http://oy7b0gogl.bkt.clouddn.com/20180828232205.png)
+![](https://image-1258017831.cos.ap-guangzhou.myqcloud.com/20180828232205.png)
 
 1. 项目主目录找到 `XXX.xcodeproj` 右键显示包内容
 2. 找到 `project.pbxproj` 使用 Sublime 打开

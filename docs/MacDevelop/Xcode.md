@@ -100,7 +100,7 @@ Example：<#mark#>、<#type#>、<#value#>
 * cd 到路径：`Xcode_Beta.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport` 
 * 添加到路径：`/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport`
 
-### Xcode使用：支持iOS Beta版本的真机来进行调试
+### Xcode 支持iOS Beta版本的真机来进行调试
 
 1. 去下载最新的 Xcode Beta 版本：
     1. [Downloads Release Xcode](https://developer.apple.com/downloads/)

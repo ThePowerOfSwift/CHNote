@@ -14,6 +14,13 @@
 4. 安装版本设置插件：`fastlane add_plugin versioning`
 5. 编辑 Fastfile 文件，编写 Fastlane Action
 6. **cocoapods管理包的话：**需要在 `Gemfile` 文件中添加 `gem "cocoapods"`
-7. xcodebuild clean -scheme XXX;bundle exec fastlane release_ipa_toPgyer
+7. 执行发布命令：
+
+```
+# Xcode clean 操作
+xcodebuild clean -scheme XXX;
+# 执行 fastlane 发布
+bundle exec fastlane release_ipa_toPgyer
+```
 
 
