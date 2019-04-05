@@ -1,0 +1,9 @@
+
+function open_gitbook_chnote() {
+	# 1、到达书籍根目录
+	cd /Users/dd01/Desktop/01-MyFiles/GitBooks/CHNote
+	# 2、开启 gitbook
+	gitbook serve
+}
+
+open_gitbook_chnote
