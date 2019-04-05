@@ -42,7 +42,11 @@ A network error has occurred. The service may be blocked by your ISP or in your 
     1. 地址格式：https://{organization}.gitbook.io/{space} 
     2. 我的地址：https://wanggw.gitbook.io/chnote
 
-### 2.4、参考：
+### 2.4、GitBook更新：
+
+* 只需要把本地的 GitBook 仓库最新的代码推送到 GitHub 仓库 GitBook 就会更新
+
+### 2.5、参考：
 
 * [如何在新版的gitbook上写自己的书](https://segmentfault.com/a/1190000015012209)
     * [书籍地址：](https://zhangzhen.gitbook.io/qmake-learn/)

@@ -10,7 +10,13 @@
 ### Xcode 下载网址：
 
 * Xcode 正式版下载地址：https://developer.apple.com/download/more/
+    * Xcode 新版本在 Mac App Store 中更新的会比上面的网站快
 * Xcode beta 版下载地址：https://developer.apple.com/download/
+* Xcode 更新问题：
+    * 处理在 Mac App Store 中下载成功，但是自动更新失败的情况
+    * 打开`活动监视器`，搜索`download`，点击进入详情，选择打开的文件和端口
+    * 在列表里面可以看到下载的Xcode所在目录，点击就可以更新了
+    * 注：按住 option，点击正在提示`正在安装`App，可以删除下载的缓存
 
 ### Xcode 相关路径：
 

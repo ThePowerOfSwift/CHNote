@@ -1,4 +1,4 @@
-# 000-Mac 终端工具 
+# Terminal Tools
 
 ## 一、iTerm2
 
