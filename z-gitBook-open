@@ -1,0 +1,14 @@
+
+function open_gitbook_chnote() {
+	# 1、到达书籍根目录
+	currentDir=$(cd "$(dirname "$0")"; pwd)
+	cd ${currentDir}
+	# 2、开启 gitbook
+	gitbook --port 5001 --lrport 5002 serve
+	echo "\033[32m=======gitbook serve 完成：🙃 ===========\033[0m"
+	# 3、使用 safari 打开地址，下面的命令其实并不会执行
+	#sleep 3
+	#open -a Safari http://localhost:5000
+}
+
+open_gitbook_chnote

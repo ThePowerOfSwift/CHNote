@@ -291,6 +291,12 @@ INIT_PATH="/Users/yourusername/Desktop/Web/findlifee.com/zb_system"
 ergodic $INIT_PATH 
 ```
 
+### 2.7、批量添加文件后缀：
+
+1. cd 到目录下：
+2. 执行命令：`for i in *; do mv "$i" "$i.png"; done`
+3. Mac可以选中所有文件，然后添加文件后缀，但是需要每个都去确定
+
 ## 三、脚本常见问题说明
 
 ### 3.1、脚本执行时间过短问题

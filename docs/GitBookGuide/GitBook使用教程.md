@@ -66,6 +66,55 @@ Error: listen EADDRINUSE: address already in use :::35729
 2. 专门的功能模块使用专门的文件夹来方式
 3. 文件夹下面的主文件使用README来命名，提交git仓库后可以直接预览
 
+## 三、脚本控制gitbook
 
+### 3.1、快速开启Serve
 
+```
+function open_gitbook_chnote() {
+	# 1、到达书籍根目录
+	currentDir=$(cd "$(dirname "$0")"; pwd)
+	cd ${currentDir}
+	# 2、开启 gitbook
+	gitbook --port 5000 --lrport 5001 serve
+	echo "\033[32m=======gitbook serve 完成：🙃 ===========\033[0m"
+	# 3、使用 safari 打开地址，下面的命令其实并不会执行
+	#sleep 3
+	#open -a Safari http://localhost:5000
+}
+
+open_gitbook_chnote
+```
+
+### 3.2、快速关闭Serve
+
+```
+function close_gitbook_chnote() {
+	# 1、根据端口号查询对应的pid
+	pid=$(lsof -i:5000 | grep node | awk '{print $2}')
+	# 2、根据pid杀死进程
+
+	if [  -n  "$pid"  ];  then
+		echo "找到了正在执行的进程"
+	    kill  -9  $pid;
+	else
+		echo "没有找到相关进程"
+	fi
+
+	sleep 3
+}
+
+close_gitbook_chnote
+```
+
+### 3.3、端口的设置问题
+
+* 如果有多个gitbook需要本地开启端口设置可以如下：
+* gitbook 1： gitbook --port 5000 --lrport 5001 serve
+* gitbook 2： gitbook --port 5002 --lrport 5003 serve
+
+### 3.4、参考
+
+* [Linux/macOS 获取进程PID、杀死进程](https://blog.csdn.net/Etheo_W/article/details/79230663)
+* [shell脚本中根据端口号kill对应的应用进程](https://blog.csdn.net/KingBoyWorld/article/details/78511319)
 

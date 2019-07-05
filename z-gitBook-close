@@ -1,0 +1,17 @@
+
+function close_gitbook_chnote() {
+	# 1、根据端口号查询对应的pid
+	pid=$(lsof -i:5001 | grep node | awk '{print $2}')
+	# 2、根据pid杀死进程
+
+	if [  -n  "$pid"  ];  then
+		echo "找到了正在执行的进程"
+	    kill  -9  $pid;
+	else
+		echo "没有找到相关进程"
+	fi
+
+	sleep 3
+}
+
+close_gitbook_chnote
